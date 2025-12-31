@@ -1,0 +1,17 @@
+CREATE TABLE agendamentos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT,
+  servico TEXT,
+  data TEXT,
+  horario TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+SELECT * FROM agendamentos
+WHERE data = '12/01' AND horario = '14:30';
+
+
+SELECT horario FROM agendamentos WHERE data = '12/01';
+
+

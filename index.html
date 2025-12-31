@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Ka — Agendamento</title>
+
+
+  <!-- Ícones (WhatsApp + Instagram) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+ <!-- ===== CHAT MODAL ===== -->
+<div class="chat-modal" id="chatModal">
+  <div class="chat-box">
+    <header class="chat-header">
+      <strong>Studio Ká • Agendamento</strong>
+      <button id="closeChat">✕</button>
+    </header>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <form class="chat-input" id="chatForm">
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="Digite sua resposta..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- ===== IMAGE MODAL ===== -->
+<div class="image-modal" id="imageModal">
+  <span class="close-img" id="closeImg">✕</span>
+  <img id="modalImg" alt="Imagem ampliada">
+</div>
+
+
+
+  <div class="wrap">
+
+    <header>
+      <div class="logo">
+        <img src="assets/Studiologo.png.png" alt="Logo Studio Ká">
+        <div>
+          <h1>Studio Ka</h1>
+          <div class="muted">Agendamentos e beleza — atendimento confortável</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#agendamento">Agendar</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+        <a href="#profissionais">Profissionais</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="card" id="agendamento">
+  <h2>Agende com nosso Chat</h2>
+  <p>Clique para abrir o chat de agendamento.</p>
+
+  <div class="chat-preview">
+    <button class="btn" id="openChat">Abrir chat</button>
+  </div>
+</div>
+
+
+        <div class="gallery" id="galeria">
+          
+
+          <h2><section class="hero-carousel"> 
+            <h2 class="title"> Galeria </h2>
+  <div class="carousel-track">
+    <img src="assets/Avatar1.jpg" />
+    <img src="assets/Avatar2.jpg" />
+    <img src="assets/Avatar3.jpg" />
+    <img src="assets/Avatar4.jpg" />
+    <img src="assets/Avatar5.jpg" />
+    <img src="assets/Avatar6.jpg" />
+    <img src="assets/Avatar7.jpg" />
+    
+
+            
+            <div class="dots" id="dots"></div>
+          </div>
+        </div>
+      </section></h2>
+
+      <!-- CONTATO COM ÍCONES -->
+      <aside class="side" id="contato">
+  <div class="card contato-icons">
+    <h2>Redes</h2>
+
+    <div class="icons-row">
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/5599999999999"
+        target="_blank"
+        class="icon whatsapp"
+        aria-label="WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a
+        href="https://www.instagram.com/studiokaoliveira_/"
+        target="_blank"
+        class="icon instagram"
+        aria-label="Instagram"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+</aside>
+
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Studio Ká
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+  <section class="team" id="profissionais">
+  <h2 class="title">Nossos Profissionais</h2>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <img src="perfil/Site foto.jpg" alt="Ana Oliveira">
+      <h3>Carla Oliveira</h3>
+      <p>Cabelereira • Colorista</p>
+
+     
+    </div>
+
+    
+  </div>
+</section>
+
+</body>
+</html>
